@@ -1,0 +1,54 @@
+/**
+ * Dialog style
+ * 
+ * @author - Faizal
+ * @date - 31st June, 2023 
+ */
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.3;
+}
+.dialog {
+  background-color: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 810px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.dialog.small {
+  width: 310px;
+}
+.dialog .title-container {
+  padding: 0 16px 0 16px;
+}
+.dialog .title-container h1 {
+  margin-bottom: 8px;
+}
+.dialog .content-container {
+  padding: 8px 16px;
+}
+.dialog .btn-container {
+  padding: 12px 16px;
+  text-align: right;
+}
+
+/* Smart phones */
+@media screen and (max-width:480px)  {  
+  .dialog {
+      width: 90%;
+  }
+}
+/* portrait tablets */
+@media screen and (min-width:481px) and (max-width:768px) {  
+  .dialog {
+    width: 80%;
+  }
+}

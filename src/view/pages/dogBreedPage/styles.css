@@ -1,0 +1,140 @@
+/**
+ * Dog breed list page style
+ * 
+ * @author - Faizal
+ * @date - 31st June, 2023 
+ */
+.header {
+    position: sticky;
+}
+.breed-list {
+    column-count: 5;
+    column-gap: 10px;
+    margin: 24px auto;
+    width: 90vw;
+}
+.dogbreedCard {
+    border-radius: 20px;
+    border: 1px solid #f5f5f5;
+    background-color: #f5f5f5;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-bottom: 10px;
+    break-inside: avoid;
+    padding-bottom: 12px;
+    position: relative;
+    overflow: hidden;
+}
+.dogbreedCard .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.3;
+    display: none;
+    transition: all 1s linear;
+}
+.dogbreedCard:hover .cover {
+    display: block;
+    cursor: pointer;
+}
+.dogbreedCard img {
+    width: 100%;
+}
+.dogbreedCard .title {
+    padding: 8px 12px 4px 12px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.dogbreedCard .info {
+    padding: 0 12px 0 12px;
+    font-size: 12px;
+    font-weight: 300;
+}
+.dogbreedContent {
+    margin: 0 12px 8px 12px;
+}
+.dogbreedContent h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.dogbreedContent p {
+    margin-top: 8px;
+}
+.dogbreedContent .fieldset {
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+.dogbreedContent .fieldset label {
+    font-weight: 500;
+    width: 100px;
+    display: inline-block;
+}
+.chip {
+    border: 1px solid #ecf0f1;
+    background-color: #f5f5f5;    
+    padding: 8px;
+    display: inline-block;
+    border-radius: 4px;
+    margin-right: 8px;
+    font-weight: 500;
+}
+.chip:hover {
+    border: 1px solid #2c3e50;
+    background-color: #2c3e50; 
+    color: #fff; 
+    cursor: pointer;
+} 
+.details-img {
+    width: 380px;
+}
+.select-field {
+    background: #e1e1e1;
+    border: none;
+    padding: 8px 4px;
+    border-radius: 16px;
+    margin-top: 8px;
+    display: inline-flex;
+}
+
+/* Smart phones */
+@media screen and (max-width:480px)  {  
+    .breed-list {
+        column-count: 1;
+    }
+    .details-img {
+        width: 100%;
+    }
+    .dogbreedContent {
+        margin: 8px 12px 8px 0;
+    }
+    .select-field {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+/* portrait tablets */
+@media screen and (min-width:481px) and (max-width:768px) {  
+    .breed-list {
+        column-count: 3;
+    }
+    .details-img {
+        width: 100%;
+    }
+    .dogbreedContent {
+        margin: 8px 12px 8px 0;
+    }
+    .select-field {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+/* medium device */
+@media screen and (min-width:769px) and (max-width:992px)  { 
+    .breed-list {
+        column-count: 4;
+    }
+}

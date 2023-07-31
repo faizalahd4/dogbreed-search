@@ -1,0 +1,24 @@
+/**
+ * Empty screen style
+ * 
+ * @author - Faizal
+ * @date - 31st June, 2023 
+ */
+.empty-screen-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: #95a5a6;
+   min-height: 400px;
+}
+.empty-screen-container i {
+   font-size: 65px;
+}
+.empty-screen-container .title {
+   font-size: 18px;
+   margin-top: 16px;
+}
+.empty-screen-container .sub-title {
+   font-size: 15px;
+}

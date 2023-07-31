@@ -1,0 +1,32 @@
+/**
+ * Alert style
+ * 
+ * @author - Faizal
+ * @date - 31st June, 2023 
+ */
+ .alert {
+    padding: 8px;
+    border-radius: 4px;
+    font-weight: 400;
+    margin: 8px 0;
+ }
+ .error-container {
+    border: 1px solid #fdeded;
+    background-color: #fdeded; 
+    color: #5f2120; 
+ }
+ .success-container {
+    border: 1px solid #edf7ed;
+    background-color: #edf7ed; 
+    color: #1d4620; 
+ }
+ .info-container {
+    border: 1px solid #e5f6fd;
+    background-color: #e5f6fd; 
+    color: #014361; 
+ }
+ .warning-container {
+    border: 1px solid #fff4e5;
+    background-color: #fff4e5; 
+    color: #663c00; 
+ }
